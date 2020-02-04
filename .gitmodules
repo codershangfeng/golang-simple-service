@@ -1,3 +1,0 @@
-[submodule "src/simple-service-proto"]
-	path = src/simple-service-proto
-	url = git@github.com:codershangfeng/simple-service-proto.git
