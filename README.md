@@ -4,7 +4,5 @@ According to the `port-adapter` architecture, this repo spikes on the architectu
 
 ## Key Commands
 - Protos as git submodule
-    - Add: `git submodule add [URL to Proto Git Repo]`
+    - Add: `cd src/ && git submodule add -b master [URL to Proto Git Repo]`
     - Update: `git submodule update`
-    
-
