@@ -1,4 +1,4 @@
-module github.com/codershangfeng/golang-simple-service
+module github.com/codershangfeng/grpcservice
 
 go 1.13
 
