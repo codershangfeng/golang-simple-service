@@ -7,4 +7,8 @@ go:
 
 .PHONY: tidy
 tidy:
-	cd src && go mod tidy
+	go mod tidy
+
+.PHONY: test
+test:
+	go test ./...
