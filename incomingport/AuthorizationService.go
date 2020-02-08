@@ -12,7 +12,7 @@ type IncomingAuthorizationRequest struct {
 }
 
 type IncomingAuthorizationResponse struct {
-	Result       ResultCode
+	ResultCode   ResultCode
 	ErrorMessage string
 	CreatedTime  time.Time
 }
