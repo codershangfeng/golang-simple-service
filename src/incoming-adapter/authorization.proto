@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package incomingadapter;
+
+message AuthorizationRequest {
+    string uuid = 1;
+    string authorizationCode = 2;
+}
+
+message AuthorizationResponse {
+    string resultCode = 1;
+    string errorMessage = 2;
+    google.protobuf.Timestamp timestamp = 3;
+    AuthorizationRequest request = 16;
+}
+
+service Authorization {
+    rpc Authorize (AuthorizationRequest) returns (AuthorizationResponse);
+}
